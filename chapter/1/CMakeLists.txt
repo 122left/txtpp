@@ -1,0 +1,1 @@
+add_executable(classifier_sample classifier_sample.cpp)
