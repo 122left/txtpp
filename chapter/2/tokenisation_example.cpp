@@ -2,7 +2,7 @@
 #include <iostream>
 
 int main() {
-	const std::string sample = "in order to understand the world, it is desired to do as the world does";
+	const std::string sample = "in order to understand the world like O'saa, it is 'desired' to do' as the world does";
 
 	txtpp::RuleTokeniser tokeniser;
 
@@ -10,10 +10,10 @@ int main() {
 
 	std::cout << "Original string: " << sample << '\n';
 
-	std::cout << "Tokens: ";
+	std::cout << "Tokens:\n";
 
 	for (const auto& token : tokens) {
-		std::cout << token << '\t';
+		std::cout << token << '\n';
 	}
 
 	return EXIT_SUCCESS;
