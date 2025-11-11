@@ -1,2 +1,5 @@
 add_executable(tokenisation_example tokenisation_example.cpp)
 target_link_libraries(tokenisation_example PRIVATE txtpp)
+
+add_executable(stemming_example stemming_example.cpp)
+target_link_libraries(stemming_example PRIVATE txtpp)

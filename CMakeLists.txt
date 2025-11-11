@@ -10,7 +10,7 @@ project ("txtpp")
 include_directories(library)
 add_library(txtpp STATIC
     src/simple_rule.cpp
-)
+    src/basics_imp.cpp)
 target_include_directories(txtpp PUBLIC "${PROJECT_SOURCE_DIR}/library")
 
 add_subdirectory(chapter)

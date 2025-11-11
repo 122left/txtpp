@@ -2,6 +2,7 @@
 
 #include <string>
 #include <vector>
+#include <unordered_map>
 
 namespace txtpp {
 
@@ -30,6 +31,19 @@ public:
 	/// <param name="input">Input string to be tokenised</param>
 	/// <returns>Returns a vector of unique tokens</returns>
 	static std::vector<std::string> tokenise(const std::string& input);
+};
+
+class RuleStemmer {
+
+public:
+
+	/// <summary>
+	/// Inflectionally stems a single token via an accompanying dictionary.
+	/// </summary>
+	/// <param name="token">String representing a token to be stemmed</param>
+	/// <param name="dict">An unordered_map<string,string> representing a dictionary</param>
+	/// <returns>A string containing the stemmed text</returns>
+	static std::string inflectional_stem(const std::string& token, std::unordered_map<std::string, std::string>& dict);
 };
 
 }
